@@ -1,0 +1,8 @@
+@mixin title-underlines {
+  position: absolute;
+  bottom: 24px;
+  display: block;
+  width: 352px;
+  border: 2px solid var(--color-brand-light);
+  content: '';
+}

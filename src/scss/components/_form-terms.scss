@@ -1,0 +1,17 @@
+.form-terms {
+  display: none;
+  
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__link {
+    color: var(--primary-color-dark);
+    text-underline-offset: 2px;
+  }
+}
