@@ -3,13 +3,14 @@
   position: relative;
   padding: 32px 0;
   background-color: var(--primary-color-dark);
-  background-image: url('../images/footer-background.png');
+  background-image: url('../images/footer-mobile-background.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (min-width: $bp-tablet) {
     text-align: left;
+    background-image: url('../images/footer-background.png');
   }
 
   &__container {
@@ -94,22 +95,38 @@
   &::before,
   &::after {
     position: absolute;
-    bottom: 0;
     background-repeat: no-repeat;
     content: '';
+
+    @media screen and (min-width: $bp-tablet) {
+      bottom: 0;
+    }
   }
 
   &::before {
-    width: 180px;
-    height: 120px;
     left: 0;
-    background-image: url('../images/decor-bread-small.png');
+    background-image: url('../images/mobile-decor-bread-small.png');
+    width: 95px;
+    height: 200px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 180px;
+      height: 120px;
+      background-image: url('../images/decor-bread-small.png');
+    }
   }
 
   &::after {
-    width: 380px;
-    height: 190px;
     right: 0;
-    background-image: url('../images/decor-bread-large.png');
+    bottom: 0;
+    background-image: url('../images/mobile-decor-bread-large.png');
+    width: 100px;
+    height: 90px;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 380px;
+      height: 186px;
+      background-image: url('../images/decor-bread-large.png');
+    }
   }
 }
